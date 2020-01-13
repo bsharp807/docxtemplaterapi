@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-const outputAmendedTempalte = require('./docx')
+const outputAmendedTemplate = require('./docx')
 
 router.get('/', function(req,res) {
-  
+  outputAmendedTemplate()
 })
 
 module.exports = router;
